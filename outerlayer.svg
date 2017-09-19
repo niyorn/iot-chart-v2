@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{opacity:0.1;}
+	.st2{fill:#E5E3E3;}
+	.st3{opacity:0.21;fill:#E2E2E2;}
+	.st4{font-family:'ArialMT';}
+	.st5{font-size:10.2319px;}
+	.st6{opacity:0.24;fill:#E2E2E2;}
+</style>
+<g>
+	<path id="SVGID_x5F_1_x5F__1_" class="st0" d="M300,43.6c140.8,0,255,114.2,255,255s-114.2,255-255,255S45,439.4,45,298.6
+		S159.2,43.6,300,43.6z"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_1_x5F__1_" startOffset="102.0507%">
+<tspan  style="font-family:'Ubuntu'; font-size:19px;">Diensten en producten</tspan>	</textPath>
+</text>
+</g>
+<g class="st1">
+	<circle class="st2" cx="300" cy="298.6" r="248.1"/>
+</g>
+<path class="st3" d="M58,242C34,343,75,460,191,521l108.7-222.4L58,242z"/>
+<path id="SVGID_x5F_1_x5F_" class="st0" d="M88.5,298.6c0-116.6,94.3-210.9,210.9-210.9v210.9H88.5z"/>
+<text transform="matrix(1 0 0 1 43.5391 42.7808)" class="st4 st5"> </text>
+<path id="SVGID_x5F_2_x5F_" class="st0" d="M299.3,298.6H66.9C66.9,427.1,170.8,531,299.3,531V298.6z"/>
+<text transform="matrix(1 0 0 1 43.5391 42.7808)" class="st4 st5"> </text>
+<path id="SVGID_x5F_3_x5F_" class="st0" d="M535.9,298.6H299.3V531C430,531,535.9,427.1,535.9,298.6z"/>
+<text transform="matrix(1 0 0 1 43.5391 42.7808)" class="st4 st5"> </text>
+<path class="st6" d="M542,352c23-112-27-288-242-302l-1,249L542,352z"/>
+<path id="SVGID_x5F_4_x5F_" class="st0" d="M299.3,298.6V91.8c123,0,222.5,92.5,222.5,206.8H299.3z"/>
+<text transform="matrix(1 0 0 1 43.5391 42.7808)" class="st4 st5"> </text>
+<g>
+	<path id="SVGID_x5F_2_x5F__1_" class="st0" d="M299.3,43.6c140.8,0,255,114.2,255,255s-114.2,255-255,255s-255-114.2-255-255
+		S158.5,43.6,299.3,43.6z"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_2_x5F__1_" startOffset="800.8467%">
+<tspan  style="font-family:'Ubuntu'; font-size:19px;">Hardware</tspan>	</textPath>
+</text>
+</g>
+<g>
+	<path id="SVGID_x5F_3_x5F__1_" class="st0" d="M299.3,26.2c-150.5,0-272.4,122-272.4,272.4S148.9,571,299.3,571
+		s272.4-122,272.4-272.4S449.8,26.2,299.3,26.2z"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_3_x5F__1_" startOffset="4087.7583%">
+<tspan  style="font-family:'Ubuntu'; font-size:19px;">Software</tspan>	</textPath>
+</text>
+</g>
+<g>
+	<path id="SVGID_x5F_4_x5F__1_" class="st0" d="M299.3,26.2c-150.5,0-272.4,122-272.4,272.4S148.9,571,299.3,571
+		s272.4-122,272.4-272.4S449.8,26.2,299.3,26.2z"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_4_x5F__1_" startOffset="5119.4653%">
+<tspan  style="font-family:'Ubuntu'; font-size:19px;">Data</tspan>	</textPath>
+</text>
+</g>
+</svg>

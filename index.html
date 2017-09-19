@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Radar Chart</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet/reset.css">
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="legenda-container">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 419.21 336.15"><defs><style>.cls-1{fill:#f9f9f9;}.cls-2{clip-path:url(#clip-path);}.cls-3{opacity:0.18;}.cls-4{font-size:40px;fill:#00458d;}.cls-10,.cls-11,.cls-12,.cls-13,.cls-4,.cls-8,.cls-9{font-family:Ubuntu, Ubuntu;}.cls-5{letter-spacing:0.01em;}.cls-6{font-size:13px;font-family:Ubuntu-Light, Ubuntu;}.cls-7{fill:#f21c00;}.cls-10,.cls-11,.cls-12,.cls-13,.cls-8,.cls-9{font-size:19px;}.cls-9{letter-spacing:-0.01em;}.cls-10{letter-spacing:0em;}.cls-11{letter-spacing:-0.01em;}.cls-12{letter-spacing:-0.03em;}.cls-13{letter-spacing:-0.02em;}</style><clipPath id="clip-path" transform="translate(0 1.36)"><polygon id="_Clipping_Path_" data-name="&lt;Clipping Path&gt;" class="cls-1" points="92.86 334.8 92.69 210.48 92.51 86.16 47.4 94.7 2.3 103.25 47.58 219.02 92.86 334.8"/></clipPath></defs><title>legenda</title><polygon id="_Clipping_Path_2" data-name="&lt;Clipping Path&gt;" class="cls-1" points="92.86 336.15 92.69 211.84 92.51 87.52 47.4 96.06 2.3 104.6 47.58 220.38 92.86 336.15"/><g class="cls-2"><rect class="cls-3" x="16.6" y="141.36" width="78.2" height="1.21" transform="translate(-25.44 14.2) rotate(-10.72)"/><rect class="cls-3" x="1.72" y="94.69" width="91.93" height="1.21" transform="translate(-16.9 11.89) rotate(-10.72)"/><rect class="cls-3" x="25.53" y="188.5" width="78.2" height="1.21" transform="translate(-34.05 16.68) rotate(-10.72)"/><rect class="cls-3" x="34.45" y="235.64" width="78.2" height="1.21" transform="translate(-42.67 19.17) rotate(-10.72)"/><rect class="cls-3" x="43.38" y="282.78" width="78.2" height="1.21" transform="translate(-51.28 21.65) rotate(-10.72)"/></g><text class="cls-4" transform="translate(0 33.86)"><tspan class="cls-5">E</tspan><tspan x="23.2" y="0">xpertise</tspan></text><text class="cls-6" transform="translate(94.85 283.09)"><tspan class="cls-7" xml:space="preserve">1     </tspan><tspan class="cls-8" x="22.15" y="0">Geen activi</tspan><tspan class="cls-9" x="117" y="0">t</tspan><tspan class="cls-10" x="124.45" y="0">eit</tspan></text><text class="cls-6" transform="translate(94.85 234.61)"><tspan class="cls-7" xml:space="preserve">2     </tspan><tspan class="cls-11" x="22.15" y="0">A</tspan><tspan class="cls-8" x="34.5" y="0">ctivi</tspan><tspan class="cls-9" x="70.13" y="0">t</tspan><tspan class="cls-8" x="77.57" y="0">eit valt binnen </tspan><tspan class="cls-12" x="205.42" y="0">k</tspan><tspan class="cls-8" x="214.85" y="0">ennis gebied</tspan></text><text class="cls-6" transform="translate(94.85 185.36)"><tspan class="cls-7" xml:space="preserve">3     </tspan><tspan class="cls-10" x="22.15" y="0">Bedrijf doet dit soms</tspan></text><text class="cls-6" transform="translate(94.85 136.36)"><tspan class="cls-7" xml:space="preserve">4     </tspan><tspan class="cls-10" x="22.15" y="0">Bedrijf doet dit meestal</tspan></text><text class="cls-6" transform="translate(94.85 88.23)"><tspan class="cls-7" xml:space="preserve">5     </tspan><tspan class="cls-13" x="22.15" y="0">C</tspan><tspan class="cls-8" x="33.65" y="0">ore business</tspan></text></svg>
+    </div>
+
+
+    <div class="container__radarChart">
+      <img  class="container__radarChart catagory" src="assets/image/outerlayer.svg" alt="outerlayer">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+    <div class="container__text">
+      <section class="information">
+        <h1>IOT Academy Partners</h1>
+      </section>
+      <section class="bedrijven">
+
+        <ul class="bedrijven__bedrijven-selectie active">
+          <li id="rdm-makerspace">
+            <img src="assets/logo/rdm.png" alt="">
+            <label for="bedrijf1">RDM Makerspace</label>
+            <input id="bedrijf1" name="Arlanet" type="checkbox">
+            <span></span>
+            <div class="tool-tip partner-platinum">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="kpn">
+            <img src="assets/logo/kpn.png" alt="">
+            <label for="bedrijf2">KPN</label>
+            <input id="bedrijf2" name="Google" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-platinum">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="accenture">
+            <img src="assets/logo/accenture.png" alt="">
+            <label for="bedrijf3">Accenture</label>
+            <input id="bedrijf3" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-platinum">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="premium">
+            <img src="assets/logo/premium.svg" alt="">
+            <label for="bedrijf4">Premium</label>
+            <input id="bedrijf4" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-silver">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="alliander">
+            <img src="assets/logo/alliander.png" alt="">
+            <label for="bedrijf5">Alliander</label>
+            <input id="bedrijf5" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-silver">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="ibm">
+            <img src="assets/logo/ibm.png" alt="">
+            <label for="bedrijf6">IBM</label>
+            <input id="bedrijf6" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-silver">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="prodapt-consulting">
+            <img src="assets/logo/prodapt-consulting.png" alt="">
+            <label for="bedrijf7">Prodapt Consulting</label>
+            <input id="bedrijf7" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="quistor">
+            <img src="assets/logo/quistor.jpg" alt="">
+            <label for="bedrijf8">Quistor</label>
+            <input id="bedrijf8" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="arlanet">
+            <img src="assets/logo/arlanet.svg" alt="">
+            <label for="bedrijf9">Arlanet</label>
+            <input id="bedrijf9" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="stn-telefact">
+            <img src="assets/logo/stn-telefact.jpg" alt="">
+            <label for="bedrijf10">sTn Telefact</label>
+            <input id="bedrijf10" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="batenburg">
+            <img src="assets/logo/batenburg.png" alt="">
+            <label for="bedrijf11">Batenburg</label>
+            <input id="bedrijf11" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="unreason">
+            <img src="assets/logo/unreason.png" alt="">
+            <label for="bedrijf12">Unreason</label>
+            <input id="bedrijf12" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="mansystems">
+            <img src="assets/logo/mansystems.svg" alt="">
+            <label for="bedrijf13">Mansystems</label>
+            <input id="bedrijf13" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="redsalt">
+            <img src="assets/logo/redsalt.png" alt="">
+            <label for="bedrijf14">Redsalt</label>
+            <input id="bedrijf14" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="ziut">
+            <img src="assets/logo/ziut.png" alt="">
+            <label for="bedrijf15">Ziut</label>
+            <input id="bedrijf15" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="conneqtech">
+            <img src="assets/logo/conneqtech.png" alt="">
+            <label for="bedrijf16">Conneqtech</label>
+            <input id="bedrijf16" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+          <li id="conrad">
+            <img src="assets/logo/conrad.png" alt="">
+            <label for="bedrijf17">Conrad</label>
+            <input id="bedrijf17" type="checkbox"></input>
+            <span></span>
+            <div class="tool-tip partner-bronze">
+              <span class="tool-tip-text"></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+<script src="script/Chart.js" charset="utf-8"></script>
+<script src="script/app.js" charset="utf-8"></script>
+
+</html>
