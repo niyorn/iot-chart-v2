@@ -77,6 +77,17 @@ input[type=checkbox]:checked+span {
   padding-left: 21vw;
 }
 
+#legenda polygon, #legenda g{
+  animation: rotate 1.7s;
+}
+
+#legenda .cls-6{
+  opacity: 0;
+  animation: opacity 1.5s forwards;
+  animation-delay: 1.2s;
+}
+
+
 .container__radarChart {
   width: 54vw;
   display: flex;
@@ -433,5 +444,21 @@ input[type=checkbox]:checked+span {
   }
 }
 
+@keyframes opacity{
+  from{
+    opacity: 0;
+  }
 
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(-90deg);
+  }
+  to{
+    transform: rotate(0);
+  }
 }
