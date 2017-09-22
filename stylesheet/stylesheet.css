@@ -4,6 +4,7 @@
 }
 
 *{
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -91,22 +92,31 @@ input[type=checkbox]:checked+span {
 }
 
 #legenda polygon, #legenda g{
-  animation: rotate 1.7s;
+  -webkit-animation: rotate 1.7s;
+          animation: rotate 1.7s;
 }
 
 #legenda .cls-6{
   opacity: 0;
-  animation: opacity 1.5s forwards;
-  animation-delay: 1.2s;
+  -webkit-animation: opacity 1.5s forwards;
+          animation: opacity 1.5s forwards;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 
 .container__radarChart {
   width: 54vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 12.5vh;
   padding-top: 0;
   padding-bottom: 0;
@@ -116,6 +126,7 @@ input[type=checkbox]:checked+span {
     /*margin is different on firefox thats why we need this*/
     .container__radarChart{
       position: static;
+      padding-top: 5rem;
     }
 }
 
@@ -125,12 +136,12 @@ input[type=checkbox]:checked+span {
   height: auto;
   padding: 0;
   margin-left: 2px;
-  margin-top: -12px;
+  margin-top: -14px;
 }
 
 @-moz-document url-prefix() {
   .container__radarChart.catagory{
-    margin-top: -27px;
+    margin-top: -26px;
     width: 55vw;
   }
 }
@@ -544,6 +555,16 @@ input[type=checkbox]:checked+span {
   }
 }
 
+@-webkit-keyframes opacity{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
 @keyframes opacity{
   from{
     opacity: 0;
@@ -554,11 +575,24 @@ input[type=checkbox]:checked+span {
   }
 }
 
-@keyframes rotate{
+@-webkit-keyframes rotate{
   from{
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
   to{
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes rotate{
+  from{
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  to{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
