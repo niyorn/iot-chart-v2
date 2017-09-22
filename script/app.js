@@ -1,6 +1,6 @@
 //variable
 var ctx = document.getElementById("myChart").getContext('2d');
-Chart.defaults.global.defaultFontFamily = "Roboto";
+Chart.defaults.global.defaultFontFamily = "Ubuntu";
 Chart.defaults.global.defaultFontSize = 18;
 Chart.defaults.global.deFaultColor = 'black';
 Chart.defaults.global.animation = {
@@ -26,7 +26,7 @@ var options = {
       fixedStepSize: 1
     },
       pointLabels: {
-            fontSize: 15
+            fontSize: 13
     },
   }
 };

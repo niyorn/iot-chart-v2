@@ -1,5 +1,6 @@
-::-webkit-scrollbar {
-  display: none;
+@font-face{
+  font-family: ubuntu, sans-serif;
+  src: url(../assets/font/Ubuntu-R.ttf);
 }
 
 body {
@@ -108,6 +109,7 @@ input[type=checkbox]:checked+span {
   height: 92vh;
   /*grid-template-rows: repeat(2, 1fr); remove comment when you add a p tag to the .container__text*/
   grid-row-gap: 2em;
+  overflow-x: hidden;
 }
 
 .bedrijven {
@@ -121,6 +123,7 @@ input[type=checkbox]:checked+span {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-right: -34px;
 }
 
 .bedrijven ul {
