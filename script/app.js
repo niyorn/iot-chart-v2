@@ -33,7 +33,7 @@ var options = {
 
 /*the catagorie of the chart*/
 /*use [] for long words*/
-var labels = ['Network providing', ['Installatie en beheer', 'van hardware'], ['Productie','van hardware'], ['Ontwerp en', 'Prototyping', 'van hardware'], 'Embedded systems',
+var labels = ['Network providing', ['Installatie en beheer', 'van hardware'], ['Productie','van hardware'], ['Ontwerp en', 'Prototyping', 'van hardware'], ['Embedded', 'systems'],
   'Apps (software)', 'Web (Software)', ['Ai/Machine learning','(software)'], ['Visualisatie','van data'], ['Analyse','van data'], ['Opslag','van data',], ['Data platform', 'aanbieder'], 'Detachering', ['Advies en', 'procesbegeleiding']
 ];
 

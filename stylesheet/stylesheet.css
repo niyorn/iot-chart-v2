@@ -3,12 +3,17 @@
   src: url(../assets/font/Ubuntu-R.ttf);
 }
 
+*{
+  transition: all 0.3s;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: white;
   font-family: Roboto;
   font-size: 1em;
+  overflow: hidden;
 }
 
 h1 {
@@ -76,6 +81,7 @@ input[type=checkbox]:checked+span {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2em;
   padding-left: 21vw;
+  overflow-x: hidden;
 }
 
 #legenda polygon, #legenda g{
@@ -93,15 +99,20 @@ input[type=checkbox]:checked+span {
   width: 54vw;
   display: flex;
   position: relative;
-  padding: 8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 12vh;
+  padding-top: 0;
+  padding-bottom: 1rem;
 }
 
 .container__radarChart.catagory{
   position: absolute;
-  width: 65.5vw;
+  width: 100%;
   height: auto;
-  top: -21%;
-  left: -12.8%;
+  padding: 0;
+  margin-left: 2px;
+  margin-top: -15px;
 }
 
 .container__text {
@@ -299,10 +310,13 @@ input[type=checkbox]:checked+span {
   content: 'Bronze partner'
 }
 
+.chartjs-hidden-iframe{
+  display: none;
+}
+
 #myChart {
   width: auto;
   height: 100%;
-  position: relative;
   top: -90px;
 }
 
@@ -323,6 +337,44 @@ input[type=checkbox]:checked+span {
   display: block;
 }
 
+/*------------------Media Queries-----------------------*/
+@media screen and (max-width: 84.250em){
+  .container{
+    padding-left: 1rem;
+  }
+
+  .container__radarChart{
+    width: 70vw;
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 61.250em){
+  .container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 1rem;
+  }
+
+  .legenda-container {
+    position: static;
+    width: 30vw;
+    left: 2rem;
+    top: 2rem;
+  }
+
+  .container__text {
+    margin-top: 8rem;
+    padding-right: 2rem;
+  }
+
+  .container__radarChart {
+    width: 100vw;
+
+  }
+}
 
 /*------------------Animation---------------------------*/
 
