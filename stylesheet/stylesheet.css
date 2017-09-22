@@ -341,6 +341,7 @@ input[type=checkbox]:checked+span {
 @media screen and (max-width: 84.250em){
   .container{
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .container__radarChart{
