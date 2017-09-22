@@ -84,6 +84,12 @@ input[type=checkbox]:checked+span {
   overflow-x: hidden;
 }
 
+@-moz-document url-prefix() {
+  .container{
+    position: relative;
+  }
+}
+
 #legenda polygon, #legenda g{
   animation: rotate 1.7s;
 }
@@ -101,9 +107,16 @@ input[type=checkbox]:checked+span {
   position: relative;
   justify-content: center;
   align-items: center;
-  padding: 12vh;
+  padding: 12.5vh;
   padding-top: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+}
+
+@-moz-document url-prefix() {
+    /*margin is different on firefox thats why we need this*/
+    .container__radarChart{
+      position: static;
+    }
 }
 
 .container__radarChart.catagory{
@@ -112,7 +125,14 @@ input[type=checkbox]:checked+span {
   height: auto;
   padding: 0;
   margin-left: 2px;
-  margin-top: -15px;
+  margin-top: -12px;
+}
+
+@-moz-document url-prefix() {
+  .container__radarChart.catagory{
+    margin-top: -27px;
+    width: 55vw;
+  }
 }
 
 .container__text {
@@ -348,6 +368,13 @@ input[type=checkbox]:checked+span {
     width: 70vw;
     margin-top: 7rem;
   }
+
+  @-moz-document url-prefix() {
+    .container__radarChart.catagory{
+      width: 70vw;
+    }
+  }
+
 }
 
 @media screen and (max-width: 61.250em){
@@ -375,6 +402,23 @@ input[type=checkbox]:checked+span {
     width: 100vw;
 
   }
+
+  @-moz-document url-prefix() {
+
+    .container__radarChart{
+      padding: 16.5vh;
+      margin-top: 0;
+    }
+
+    .container__radarChart.catagory{
+      width: 95%;
+    }
+
+    .container__text {
+    margin-top: 0;
+    }
+  }
+
 }
 
 /*------------------Animation---------------------------*/
