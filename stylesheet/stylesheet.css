@@ -1,9 +1,9 @@
-@font-face{
+@font-face {
   font-family: ubuntu, sans-serif;
   src: url(../assets/font/Ubuntu-R.ttf);
 }
 
-*{
+* {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -14,7 +14,7 @@ body {
   color: white;
   font-family: Roboto;
   font-size: 1em;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
   color: #00458d;
   font-size: 6em;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 2.8vw;
 }
 
 p {
@@ -83,27 +83,31 @@ input[type=checkbox]:checked+span {
   grid-gap: 2em;
   padding-left: 21vw;
   overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 @-moz-document url-prefix() {
-  .container{
+  .container {
     position: relative;
   }
 }
 
-#legenda polygon, #legenda g{
+#legenda polygon, #legenda g {
   -webkit-animation: rotate 1.7s;
-          animation: rotate 1.7s;
+  animation: rotate 1.7s;
 }
 
-#legenda .cls-6{
+#legenda .cls-6 {
   opacity: 0;
   -webkit-animation: opacity 1.5s forwards;
-          animation: opacity 1.5s forwards;
+  animation: opacity 1.5s forwards;
   -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
-
 
 .container__radarChart {
   width: 54vw;
@@ -111,53 +115,43 @@ input[type=checkbox]:checked+span {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 12.5vh;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7vw;
   padding-top: 0;
   padding-bottom: 0;
+  position: relative;
 }
 
-@-moz-document url-prefix() {
-    /*margin is different on firefox thats why we need this*/
-    .container__radarChart{
-      position: static;
-      padding-top: 5rem;
-    }
-}
-
-.container__radarChart.catagory{
+.container__radarChart.catagory {
   position: absolute;
-  width: 100%;
-  height: auto;
+  height: 120%;
   padding: 0;
-  margin-left: 2px;
-  margin-top: -14px;
+  margin-left: -11px;
+  margin-top: -12px;
 }
 
 @-moz-document url-prefix() {
-  .container__radarChart.catagory{
-    margin-top: -26px;
-    width: 55vw;
+  .container__radarChart.catagory {
+    margin-left: -22px;
+    margin-top: -27px;
   }
 }
 
 .container__text {
   display: grid;
   height: 92vh;
-  /*grid-template-rows: repeat(2, 1fr); remove comment when you add a p tag to the .container__text*/
   grid-row-gap: 2em;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .bedrijven {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-y: hidden;
   padding-right: 17px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -165,6 +159,7 @@ input[type=checkbox]:checked+span {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -34px;
+  height: 78vh;
 }
 
 .bedrijven ul {
@@ -213,6 +208,13 @@ input[type=checkbox]:checked+span {
   border-right: solid 1px rgba(249, 249, 249, 0.79);
 }
 
+.legenda__color{
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+
 .container__selection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +224,6 @@ input[type=checkbox]:checked+span {
   width: 100%;
   z-index: 2;
 }
-
 
 .container__selection ul {
   display: -webkit-box;
@@ -271,27 +272,29 @@ input[type=checkbox]:checked+span {
   animation: slide-in-up 1s ease-in;
 }
 
-.tool-tip{
+.tool-tip {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;;
+  display: inline-flex;
+  ;
   position: relative;
 }
-.tool-tip-text{
+
+.tool-tip-text {
   visibility: hidden;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0.5rem;
   font-size: 1.5em;
   background-color: black;
-  color:white;
+  color: white;
   position: absolute;
   top: -150%;
-  left:-4.5em;
+  left: -4.5em;
   width: 5em;
   height: auto;
   -webkit-transition: all 0.5s;
@@ -300,47 +303,48 @@ input[type=checkbox]:checked+span {
   pointer-events: none;
 }
 
-.tool-tip:hover .tool-tip-text{
+.tool-tip:hover .tool-tip-text {
   visibility: visible;
   opacity: 1;
 }
 
-.partner-platinum, .partner-gold, .partner-silver, .partner-bronze{
+.partner-platinum, .partner-gold, .partner-silver, .partner-bronze {
   font-size: 0.7em;
 }
 
-.partner-platinum:before{
+.partner-platinum:before {
   content: '1';
 }
 
-.partner-gold:before{
+.partner-gold:before {
   content: '2';
 }
 
-.partner-silver:before{
+.partner-silver:before {
   content: '3';
 }
-.partner-bronze::before{
+
+.partner-bronze::before {
   content: '4';
 }
 
-.partner-platinum .tool-tip-text::before{
+.partner-platinum .tool-tip-text::before {
   content: 'Platinum partner'
 }
 
-.partner-gold .tool-tip-text::before{
+.partner-gold .tool-tip-text::before {
   content: 'Gold partner'
 }
 
-.partner-silver .tool-tip-text::before{
+.partner-silver .tool-tip-text::before {
   content: 'Silver partner'
 }
 
-.partner-bronze .tool-tip-text::before{
+.partner-bronze .tool-tip-text::before {
   content: 'Bronze partner'
 }
 
-.chartjs-hidden-iframe{
+.chartjs-hidden-iframe {
   display: none;
 }
 
@@ -350,7 +354,7 @@ input[type=checkbox]:checked+span {
   top: -90px;
 }
 
-.legenda-container{
+.legenda-container {
   position: absolute;
   width: 16vw;
   left: 2rem;
@@ -367,69 +371,66 @@ input[type=checkbox]:checked+span {
   display: block;
 }
 
+
 /*------------------Media Queries-----------------------*/
-@media screen and (max-width: 84.250em){
-  .container{
+
+@media screen and (max-width: 84.250em) {
+  .container {
     padding-left: 1rem;
     padding-right: 1rem;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
-
-  .container__radarChart{
+  .container__radarChart {
     width: 70vw;
+    padding: 9vw;
     margin-top: 7rem;
   }
-
   @-moz-document url-prefix() {
-    .container__radarChart.catagory{
+    .container__radarChart.catagory {
       width: 70vw;
     }
   }
-
 }
 
-@media screen and (max-width: 61.250em){
-  .container{
+@media screen and (max-width: 61.250em) {
+  .container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
     overflow: auto;
     overflow-x: hidden;
     padding-right: 1rem;
   }
-
   .legenda-container {
     position: static;
     width: 30vw;
     left: 2rem;
     top: 2rem;
   }
-
   .container__text {
     margin-top: 8rem;
     padding-right: 2rem;
   }
-
   .container__radarChart {
     width: 100vw;
-
+    padding: 0;
+    padding-right: 15vw;
+    padding-left: 6vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
-
-  @-moz-document url-prefix() {
-
-    .container__radarChart{
-      padding: 16.5vh;
-      margin-top: 0;
-    }
-
-    .container__radarChart.catagory{
-      width: 95%;
-    }
-
-    .container__text {
+  .container__radarChart.catagory {
+    width: 95%;
+    margin-left: -9px;
+    margin-top: -10px;
+  }
+  .container__text {
     margin-top: 0;
-    }
+    height: 100%;
   }
-
 }
+
 
 /*------------------Animation---------------------------*/
 
@@ -554,44 +555,42 @@ input[type=checkbox]:checked+span {
   }
 }
 
-@-webkit-keyframes opacity{
-  from{
+@-webkit-keyframes opacity {
+  from {
     opacity: 0;
   }
-
-  to{
+  to {
     opacity: 1;
   }
 }
 
-@keyframes opacity{
-  from{
+@keyframes opacity {
+  from {
     opacity: 0;
   }
-
-  to{
+  to {
     opacity: 1;
   }
 }
 
-@-webkit-keyframes rotate{
-  from{
+@-webkit-keyframes rotate {
+  from {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
-  to{
+  to {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
 }
 
-@keyframes rotate{
-  from{
+@keyframes rotate {
+  from {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
-  to{
+  to {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
 }
