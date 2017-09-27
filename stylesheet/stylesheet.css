@@ -1,10 +1,10 @@
 @font-face {
-  font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu, Arial;
   src: url(../assets/font/Ubuntu-R.ttf);
 }
 
 @font-face {
-  font-family: Ubuntu-Light, sans-serif;
+  font-family: Ubuntu-Light, Arial;
   src: url(../assets/font/Ubuntu-L.ttf);
 }
 
@@ -12,6 +12,7 @@
 * {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body {
