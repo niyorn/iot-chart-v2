@@ -496,7 +496,13 @@ function removeData(bedrijfNaam, index) {
 };
 
 //---------------------------Event Listener -------------------------------
-document.querySelectorAll('.bedrijven__bedrijven-selectie li').forEach(
+/*document.querySelectorAll('.bedrijven__bedrijven-selectie li').forEach(
   function(item, index, arr) {
     item.addEventListener('mouseup', addData)
-  }, this);
+  }, this);*/
+
+var company = document.querySelectorAll('.bedrijven__bedrijven-selectie li'), i;
+
+for(let i = 0; i < company.length; i++){
+  company[i].addEventListener('mouseup', addData);
+}
